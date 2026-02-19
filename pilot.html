@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Mnomis | Pilot Overview</title>
+<meta name="description" content="Executive pilot overview for Mnomis. No PII or PHI required.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mnomis | Pilot Overview">
+<meta property="og:description" content="Pilot scope, timeline, deliverables, and data requirements. No PII or PHI required.">
+
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#0f172a;
+    --muted:#475569;
+    --muted2:#64748b;
+    --line:#e2e8f0;
+    --panel:#f8fafc;
+    --accent:#2563eb;
+    --accent2:#1d4ed8;
+    --green:#16a34a; /* use sparingly */
+    --shadow:0 12px 30px rgba(15,23,42,.08);
+    --radius:18px;
+    --max:980px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:var(--font); background:var(--bg); color:var(--ink); line-height:1.55;}
+  a{color:var(--accent2); text-decoration:underline;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:48px 22px 70px;}
+  .top{display:flex; align-items:flex-start; justify-content:space-between; gap:18px; margin-bottom:18px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:34px; width:auto; display:block;}
+  .tag{font-size:12px; font-weight:800; letter-spacing:.10em; text-transform:uppercase; color:var(--muted2);}
+  h1{font-size:40px; line-height:1.08; letter-spacing:-.6px; margin:10px 0 10px;}
+  .lead{font-size:18px; color:var(--muted); max-width:78ch; margin-top:10px;}
+  .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+  .pill{border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:8px 10px; font-size:13px; color:var(--muted); display:inline-flex; align-items:center; gap:8px;}
+  .pill i{width:9px; height:9px; border-radius:3px; background:var(--green); display:inline-block;} /* tiny green */
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:18px;}
+  .card{border:1px solid var(--line); border-radius:var(--radius); background:#fff; box-shadow:var(--shadow); padding:16px;}
+  .card h2{font-size:16px; letter-spacing:-.2px; margin:0 0 6px;}
+  .card p{margin:0; color:var(--muted); font-size:14px;}
+  .kpi{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:14px;}
+  .kpi .box{border:1px solid var(--line); border-radius:16px; background:linear-gradient(180deg,#fff,var(--panel)); padding:14px;}
+  .kpi .box span{display:block; font-size:12px; color:var(--muted2); text-transform:uppercase; letter-spacing:.08em; font-weight:800;}
+  .kpi .box b{display:block; margin-top:6px; font-size:15px; letter-spacing:-.1px;}
+  .kpi .box em{display:block; margin-top:4px; font-style:normal; color:var(--muted); font-size:13px;}
+  .section{margin-top:18px;}
+  .sectionTitle{display:flex; align-items:center; justify-content:space-between; gap:14px; margin:0 0 10px;}
+  .sectionTitle h3{margin:0; font-size:18px; letter-spacing:-.2px;}
+  .divider{height:1px; background:var(--line); margin:16px 0;}
+  .list{margin:0; padding-left:18px; color:var(--muted); font-size:14px;}
+  .list li{margin:7px 0;}
+  .table{border:1px solid var(--line); border-radius:18px; overflow:hidden; background:#fff; box-shadow:var(--shadow);}
+  .trow{display:grid; grid-template-columns:1.05fr 1.95fr; gap:0; padding:12px 14px; border-bottom:1px solid var(--line);}
+  .trow:last-child{border-bottom:none;}
+  .trow b{display:block; font-size:13px;}
+  .trow span{display:block; color:var(--muted); font-size:13px; margin-top:3px;}
+  .foot{margin-top:22px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted2); font-size:13px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+  .mini{color:var(--muted2); font-size:12px;}
+  @media (max-width:860px){
+    h1{font-size:34px;}
+    .grid{grid-template-columns:1fr;}
+    .kpi{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <img src="Mnomis%20Simple%20Logo.png" alt="Mnomis logo"/>
+        <div>
+          <div class="tag">Pilot overview</div>
+          <div class="mini">Designed for clinical, operations, and compliance review</div>
+        </div>
+      </div>
+      <div class="mini">Version: February 2026</div>
+    </div>
+
+    <h1>Evaluate outreach effectiveness with behavioral inference</h1>
+    <p class="lead">
+      The Mnomis pilot tests whether matching channel, timing, and framing to inferred engagement structure improves follow-through and reduces wasted outreach.
+      The pilot runs on historical interaction data only and does not change live operations.
+    </p>
+
+    <div class="pillRow">
+      <div class="pill"><i></i><b>No PII required</b></div>
+      <div class="pill"><i></i><b>No PHI required</b></div>
+      <div class="pill"><i></i><b>No integration pilot</b></div>
+      <div class="pill"><i></i><b>Confidence-scored outputs</b></div>
+    </div>
+
+    <div class="kpi">
+      <div class="box">
+        <span>Recommended scope</span>
+        <b>300 to 800 members</b>
+        <em>15 to 30 interaction events per member</em>
+      </div>
+      <div class="box">
+        <span>Minimum scope</span>
+        <b>100 members</b>
+        <em>20 to 30 interaction events per member</em>
+      </div>
+      <div class="box">
+        <span>Duration</span>
+        <b>4 weeks</b>
+        <em>From dataset transfer to results review</em>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sectionTitle">
+        <h3>What you receive</h3>
+      </div>
+      <div class="mini" style="margin-top:-4px; margin-bottom:10px;">
+        <a href="brief.pdf" target="_blank">View sample Outreach Intelligence Brief</a> &nbsp;·&nbsp; <a href="security.html">Security and data handling</a>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>Outreach Intelligence Briefs</h2>
+          <p>Member-level briefs with posture, confidence score, and recommended approach (channel, timing, framing).</p>
+        </div>
+        <div class="card">
+          <h2>Executive summary</h2>
+          <p>A concise readout of engagement structure, where outreach is wasted, and where approach changes are likely to improve follow-through.</p>
+        </div>
+        <div class="card">
+          <h2>Signal and cohort findings</h2>
+          <p>Key behavioral signals, distribution of inferred structures, and patterns that explain differential response.</p>
+        </div>
+        <div class="card">
+          <h2>Measurement plan</h2>
+          <p>Success criteria, recommended test design, and how outcomes feed calibration in a subsequent phase.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="sectionTitle">
+        <h3>Data required for the pilot</h3>
+      </div>
+      <div class="table">
+        <div class="trow">
+          <div><b>Identifier</b></div>
+          <div><span>Pseudonymized member ID only. No direct identifiers.</span></div>
+        </div>
+        <div class="trow">
+          <div><b>Interaction events</b></div>
+          <div><span>Outreach attempts, responses, appointments, care gap touches and closures (as available).</span></div>
+        </div>
+        <div class="trow">
+          <div><b>Timestamps and channel</b></div>
+          <div><span>Date-time of event and channel (phone, SMS, email, mail).</span></div>
+        </div>
+        <div class="trow">
+          <div><b>Optional fields</b></div>
+          <div><span>Program tag, language preference, high-level eligibility flags (non-clinical).</span></div>
+        </div>
+      </div>
+      <div class="mini" style="margin-top:10px;">
+        Secure transfer is supported via restricted-access folder share or encrypted upload link. No email attachments.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="sectionTitle">
+        <h3>Timeline</h3>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>Week 1</h2>
+          <p>Secure data transfer, validation, and signal mapping.</p>
+        </div>
+        <div class="card">
+          <h2>Week 2</h2>
+          <p>Signal construction, posture inference, and confidence scoring.</p>
+        </div>
+        <div class="card">
+          <h2>Week 3</h2>
+          <p>Brief generation and intervention sensitivity analysis.</p>
+        </div>
+        <div class="card">
+          <h2>Week 4</h2>
+          <p>Results readout, opportunity sizing, and next-step options.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="sectionTitle">
+        <h3>Success criteria</h3>
+      </div>
+      <ul class="list">
+        <li>Reliable engagement structure inference for the pilot cohort, with confidence distribution.</li>
+        <li>Evidence that intervention effectiveness differs meaningfully by inferred structure (channel, timing, framing).</li>
+        <li>Operational usability of the brief format for care teams.</li>
+        <li>A clear recommendation for next-step validation and calibration.</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="sectionTitle">
+        <h3>What happens after</h3>
+      </div>
+      <ul class="list">
+        <li>No obligation. The pilot is an evaluation.</li>
+        <li>Optional expanded cohort and repeated cadence for improved confidence and calibration.</li>
+        <li>Optional workflow embedding in a task view, worklist, or CRM panel.</li>
+        <li>Optional test design for measuring lift and operational impact.</li>
+      </ul>
+    </div>
+
+    
+    <div class="foot" style="gap:14px;">
+      <div>Mnomis</div>
+      <div>
+        <a href="index.html">Overview</a> &nbsp;|&nbsp;
+        <a href="pilot.html">Pilot</a> &nbsp;|&nbsp;
+        <a href="brief.pdf" target="_blank">Sample brief</a> &nbsp;|&nbsp;
+        <a href="security.html">Security</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
