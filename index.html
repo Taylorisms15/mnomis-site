@@ -474,6 +474,8 @@
     display:block;
   }
 
+
+.brand img{height:30px;width:auto;display:block;}
 </style>
 
 <link rel="canonical" href="https://mnomis.com/">
@@ -541,6 +543,21 @@
           <div class="note" style="margin-top:14px;">
             Pilots use pseudonymized engagement data only. No PII or PHI required.
           </div>
+
+          <div class="note" style="margin-top:14px; padding:14px 14px;">
+            <div style="font-weight:800; color:var(--ink);">Pilot in 4 weeks. No integration required.</div>
+            <div style="margin-top:6px;">
+              <a href="pilot.html" style="color:var(--accent2); font-weight:800; text-decoration:underline;">Pilot overview</a>
+              &nbsp;·&nbsp;
+              <a href="brief.pdf" target="_blank" style="color:var(--accent2); font-weight:800; text-decoration:underline;">Sample brief</a>
+              &nbsp;·&nbsp;
+              <a href="security.html" style="color:var(--accent2); font-weight:800; text-decoration:underline;">Security</a>
+            </div>
+            <div style="margin-top:8px; color:var(--muted); font-size:14px;">
+              You provide a pseudonymized export of engagement events. We return Outreach Intelligence Briefs, cohort findings, and a measurement plan.
+            </div>
+          </div>
+
 
           <div class="heroMeta">
             <div class="pill"><i aria-hidden="true"></i><b>No integration pilot</b><span>Start with a simple export</span></div>
@@ -976,7 +993,7 @@
             <div class="heroActions" style="margin-top:18px;">
               <a class="btn primary" href="#contact">Request a pilot <span class="arrow">→</span></a>
               <a class="btn" href="#faq" style="border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.06); color:#fff;">Read FAQs</a>
-            </div>
+            <div style="margin-top:10px;"><a href="pilot.html" style="color:#16a34a; font-weight:800; text-decoration:underline;">View pilot details</a></div></div>
           </div>
 
           <div class="pilotSteps">
@@ -1141,25 +1158,7 @@
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="footGrid">
-      <div>
-        <b style="color:var(--ink);">Mnomis</b>
-        <div class="muted" style="margin-top:6px; max-width:90ch;">
-          Outreach Intelligence Infrastructure powered by the Motivational Intelligence Framework. Designed to improve engagement efficiency through interpretable behavioral inference and outcome calibration.
-        </div>
-        <div class="muted" style="margin-top:10px;">© <span id="yr"></span> Mnomis</div>
-      </div>
-      <div class="footLinks">
-        <a href="pilot.html">Pilot</a>
-        <a href="security.html">Security</a>
-        <a href="brief.pdf" target="_blank">Sample brief</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-</footer>
+
 
 <script>
   // Small production-friendly interactions: tabs + reveal on scroll + footer year
@@ -1201,6 +1200,25 @@
     els.forEach(el => io.observe(el));
   })();
 </script>
+
+
+<footer style="margin-top:60px; padding:22px 0; border-top:1px solid #e2e8f0; font-size:14px; color:#64748b;">
+  <div style="max-width:980px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; align-items:center;">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="mnomis-logo.png" alt="Mnomis logo" style="height:22px; width:auto; display:block;">
+      <span style="font-weight:800; letter-spacing:.10em; font-size:12px;">MNOMIS</span>
+    </div>
+    <div>
+      <a href="index.html" style="color:#64748b; text-decoration:none; font-weight:700;">Overview</a>
+      <span style="margin:0 10px;">|</span>
+      <a href="pilot.html" style="color:#64748b; text-decoration:none; font-weight:700;">Pilot</a>
+      <span style="margin:0 10px;">|</span>
+      <a href="brief.pdf" target="_blank" style="color:#64748b; text-decoration:none; font-weight:700;">Sample brief</a>
+      <span style="margin:0 10px;">|</span>
+      <a href="security.html" style="color:#64748b; text-decoration:none; font-weight:700;">Security</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
