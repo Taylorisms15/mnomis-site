@@ -1,7 +1,13 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">
-      <a href="/"><img src="/assets/mnomis-logo.svg" alt="Mnomis"></a>
+      <a href="/" aria-label="Mnomis home">
+        <picture>
+          <source srcset="/assets/mnomis-logo.svg" type="image/svg+xml">
+          <source srcset="/assets/mnomis-logo.png" type="image/png">
+          <img src="/assets/mnomis-logo-fallback.svg" alt="Mnomis">
+        </picture>
+      </a>
     </div>
 
     <nav class="main-nav" aria-label="Primary">
