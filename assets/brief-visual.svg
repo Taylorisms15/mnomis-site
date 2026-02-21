@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0F1A33"/>
+    </linearGradient>
+    <filter id="s" x="-40" y="-40" width="1060" height="640" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0B1220" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="560" rx="26" fill="url(#g)"/>
+  <rect x="44" y="44" width="892" height="472" rx="22" fill="#FFFFFF" filter="url(#s)"/>
+
+  <!-- Header -->
+  <rect x="44" y="44" width="892" height="88" rx="22" fill="#F6F8FB"/>
+  <text x="86" y="92" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="20" font-weight="800" fill="#0B1220">Outreach Intelligence Brief</text>
+  <text x="86" y="118" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="600" fill="#3A465A">Member ID 28417  |  Updated: Today  |  Confidence: High</text>
+
+  <!-- Left column blocks -->
+  <rect x="74" y="154" width="370" height="124" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
+  <text x="96" y="184" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="800" fill="#3A465A">Current engagement posture</text>
+  <text x="96" y="214" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="22" font-weight="900" fill="#0B1220">Structure-seeking</text>
+  <text x="96" y="242" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="600" fill="#3A465A">Responds best to clear direction and reduced choice burden.</text>
+
+  <rect x="74" y="296" width="370" height="200" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
+  <text x="96" y="326" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="800" fill="#3A465A">Drivers</text>
+
+  <!-- Driver pills -->
+  <rect x="96" y="346" width="320" height="32" rx="999" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
+  <text x="112" y="367" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="700" fill="#0B1220">No follow-through after SMS reminders (3x)</text>
+
+  <rect x="96" y="388" width="320" height="32" rx="999" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
+  <text x="112" y="409" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="700" fill="#0B1220">High response when a caller offers 2 concrete options</text>
+
+  <rect x="96" y="430" width="320" height="32" rx="999" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
+  <text x="112" y="451" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="700" fill="#0B1220">Delayed engagement until urgent event pattern</text>
+
+  <!-- Right column blocks -->
+  <rect x="474" y="154" width="432" height="164" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
+  <text x="496" y="184" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="800" fill="#3A465A">Recommended outreach</text>
+
+  <text x="496" y="214" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#3A465A">Channel</text>
+  <text x="580" y="214" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">Phone call</text>
+
+  <text x="496" y="242" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#3A465A">Tone</text>
+  <text x="580" y="242" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">Direct, step-by-step</text>
+
+  <text x="496" y="270" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#3A465A">Next step</text>
+  <text x="580" y="270" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">Offer two appointment windows</text>
+
+  <text x="496" y="298" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#3A465A">Escalation</text>
+  <text x="580" y="298" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">If no answer, follow with mailed card</text>
+
+  <rect x="474" y="336" width="432" height="160" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
+  <text x="496" y="366" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="800" fill="#3A465A">Script cue</text>
+  <text x="496" y="392" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="600" fill="#3A465A">Keep it short. Reduce choice overload. Make the action concrete.</text>
+
+  <rect x="496" y="412" width="388" height="62" rx="14" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
+  <text x="512" y="438" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="700" fill="#0B1220">"We can take care of this in two quick options. Which works better,</text>
+  <text x="512" y="456" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="700" fill="#0B1220">Tuesday morning or Thursday afternoon?"</text>
+</svg>
