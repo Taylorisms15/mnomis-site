@@ -1,252 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mnomis | Outreach Intelligence</title>
-  <meta name="description" content="Mnomis turns observed engagement behavior into motivation-aware guidance so care teams can choose the right channel, tone, and next step.">
-  <link rel="icon" type="image/png" href="./assets/favicon.png">
-  <meta property="og:title" content="Mnomis | Outreach Intelligence">
-  <meta property="og:description" content="Behavior in. Guidance out. Decision-ready outputs for care teams.">
-  <meta property="og:image" content="./assets/output-preview.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <style>
-:root{--bg:#ffffff;--ink:#0f172a;--muted:#475569;--muted2:#64748b;--line:#e2e8f0;--panel:#f8fafc;--accent:#16a34a;--radius:18px;}
-*{box-sizing:border-box}html,body{margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
-.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);}
-.topbarInner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:18px}
-.brand{display:flex;align-items:center;text-decoration:none;gap:12px}
-.brand img{flex-shrink:0;height:34px;width:auto;display:block;max-width:260px}
-.nav{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
-.nav a{font-size:14px;color:var(--muted2);font-weight:850;text-decoration:none;white-space:nowrap}
-.nav a:hover{color:var(--ink)}
-.hero{padding:74px 0 56px;border-bottom:1px solid var(--line);background:linear-gradient(to bottom,#ffffff,#f8fafc)}
-.kicker{display:flex;align-items:center;gap:10px;color:var(--muted2);font-weight:900;letter-spacing:.12em;font-size:12px;text-transform:uppercase;margin:0 0 14px}
-.kdot{width:10px;height:10px;border-radius:999px;background:var(--accent)}
-h1{font-size:46px;line-height:1.08;letter-spacing:-.6px;margin:0}
-.sub{margin:14px 0 0;color:var(--muted);max-width:820px;font-size:18px;line-height:1.65}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-weight:900;font-size:14px;text-decoration:none;background:#fff}
-.btnAccent{background:var(--accent);color:#fff;border-color:var(--accent)}
-.btnDark{background:var(--ink);color:#fff;border-color:var(--ink)}
-.section{padding:64px 0}
-h2{font-size:32px;line-height:1.18;letter-spacing:-.45px;margin:0 0 14px}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.cardPanel{background:var(--panel)}
-.small{font-size:14px;color:var(--muted2);line-height:1.7;margin:0}
-hr.sep{border:none;border-top:1px solid var(--line);margin:14px 0}
-.footer{padding:22px 0;border-top:1px solid var(--line);color:var(--muted2);font-size:14px}
-.footerInner{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.footer a{color:var(--muted2);text-decoration:none;font-weight:850}
-.footer a:hover{color:var(--ink)}
-@media (max-width:760px){
-  .topbarInner{flex-direction:column;align-items:flex-start}
-  h1{font-size:36px}
-  .grid{grid-template-columns:repeat(6,1fr)}
-  .card{grid-column:span 6 !important}
-}
-</style>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/include.js" defer></script>
 </head>
 <body>
-<div class="topbar">
-  <div class="wrap">
-    <div class="topbarInner">
-      <a class="brand" href="index.html">
-        <img src="data:image/png;base64,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" data-src="./assets/logo.png" alt="Mnomis logo">
-      </a>
-      <div class="nav">
-        <a href="pilot.html">Pilot overview</a>
-        <a href="security.html">Security</a>
-        <a href="brief.pdf" target="_blank">Sample brief</a>
-        <a href="#about">About</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="hero">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>Outreach intelligence</div>
-    <h1>Make outreach land the way it needs to.</h1>
-    <p class="sub">Mnomis turns observed engagement behavior into motivation-aware guidance so care teams can choose the right channel, tone, and next step at the moment it matters.</p>
-    <p class="small" style="margin-top:12px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.7;">
-      Delivers decision-ready Outreach Intelligence Briefs within 30 days, showing exactly how to improve follow-through, reduce wasted outreach effort, and focus care team time where it has the greatest impact.
+  <div data-include="/components/Header.html"></div>
+  
+<section class="hero">
+  <div class="container">
+    <span class="kicker">Outreach Intelligence</span>
+    <h1>Make outreach land better, without changing your clinical program</h1>
+    <p class="hero-subhead">
+      Mnomis interprets observed engagement behavior to identify how members are most likely to receive outreach now,
+      then translates that interpretation into clear guidance on channel, tone, and next step.
     </p>
-    <div class="actions">
-      <a class="btn btnAccent" href="pilot.html">Pilot overview</a>
-      <a class="btn btnGhost" href="brief.pdf" target="_blank">View sample brief</a>
-      <a class="btn btnGhost" href="security.html">Security and data handling</a>
+    <div class="hero-actions">
+      <a class="cta-button large" href="/pilot/">Request Pilot</a>
+      <a class="secondary-link" href="/methodology/">Explore the Framework</a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section" id="output-preview">
-  <div class="wrap">
-    <div class="grid" style="align-items:center;">
-      <div style="grid-column: span 6;">
-        <div class="kicker"><span class="kdot"></span>Output preview</div>
-        <h2>See exactly what your teams will use</h2>
-        <p class="sub" style="margin-top:8px;max-width:520px;">
-          Each member receives a clear, interpretable Outreach Intelligence Brief showing the recommended outreach approach, confidence, and escalation flags. Designed to work inside existing workflows.
-        </p>
-        <div style="margin-top:18px;">
-          <a class="btn btnAccent" href="pilot.html">Pilot overview</a>
-          <a class="btn btnGhost" href="brief.pdf" target="_blank" style="margin-left:10px;">Open sample brief</a>
-        </div>
-      </div>
-      <div style="grid-column: span 6; text-align:right;">
-        <img src="./assets/output-preview.png" alt="Outreach Intelligence Brief preview"
-             style="max-width:520px;width:100%;height:auto;border-radius:14px;border:1px solid #e2e8f0;box-shadow:0 20px 40px rgba(0,0,0,.08);">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section" id="value">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>Operational impact</div>
-    <h2>What changes when care teams have guidance</h2>
-    <div class="grid" style="margin-top:18px;">
-      <div class="card cardPanel" style="grid-column: span 4;">
-        <h3>Reduce wasted outreach effort</h3>
-        <p class="small">Stop repeating approaches that do not land. Focus effort where follow-through is most likely.</p>
-      </div>
-      <div class="card cardPanel" style="grid-column: span 4;">
-        <h3>Increase follow-through on critical actions</h3>
-        <p class="small">Match outreach tone, timing, and channel to how members actually engage.</p>
-      </div>
-      <div class="card cardPanel" style="grid-column: span 4;">
-        <h3>Give teams clear, usable guidance</h3>
-        <p class="small">Outputs are designed for human interpretation, not black-box scoring.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section" id="pilot-entry">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>Pilot</div>
-    <h2>Start with a focused pilot</h2>
-    <p class="sub" style="margin-top:8px;max-width:860px;">
-      No integration required. Provide a pseudonymized export of engagement events, and receive Outreach Intelligence Briefs, cohort findings, and a measurement plan within 30 days.
+<section class="section">
+  <div class="container">
+    <h2>The problem</h2>
+    <p>
+      Outreach fails less because members do not need care and more because the message does not fit how they are ready to engage.
+      Care teams have risk signals and care plans. What they often lack is a reliable way to choose the right channel and tone for each member.
     </p>
-    <div style="margin-top:18px;">
-      <a class="btn btnAccent" href="pilot.html">Pilot overview</a>
-      <a class="btn btnGhost" href="security.html" style="margin-left:10px;">Security and data handling</a>
-    </div>
-  </div>
-</div>
 
-<div class="section" id="about">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>About us</div>
-    <h2> Built by experience design leaders and for healthcare reality</h2>
-    <p class="small" style="margin-top:10px;max-width:880px;color:var(--muted);font-size:16px;line-height:1.7;">
-Mnomis was created to solve a simple but persistent failure in healthcare outreach: care teams know what needs to happen, but lack insight into how each member is most likely to receive outreach at the moment action is required.
-We interpret observed engagement behavior over time to identify patterns of readiness, receptivity, and follow-through. These patterns reflect stable underlying motivational tendencies, but their expression shifts depending on context. Mnomis translates this behavioral history into clear, interpretable Outreach Intelligence Briefs that help care teams choose the right channel, tone, and next step.
-</p>
-Our work is grounded in decades of experience designing customer and member experiences across healthcare, technology, and highly regulated industries. We combine behavioral evidence, experience design discipline, and strict operational rigor to produce guidance that works inside real clinical workflows. Interpretability is a core design principle. Every recommendation shows its drivers, confidence, and escalation notes, allowing care teams and compliance reviewers to understand exactly why guidance is provided.
-
-Our goal is not to automate care. Our goal is to help care teams use their time and expertise more effectively, improving follow-through, reducing wasted outreach effort, and ultimately improving outcomes.
-</p>
-<p class="small" style="margin-top:12px;max-width:880px;color:var(--muted);font-size:16px;line-height:1.7;">
-</p>
-
-<div class="grid" style="margin-top:18px;">
-  <div class="card cardPanel" style="grid-column: span 4;">
-    <div style="font-weight:950;font-size:18px;">◈</div>
-    <h3 style="margin:6px 0 8px;">Human centered, operationally strict</h3>
-    <p class="small">We start with lived experience and behavioral evidence, then encode it into a system that works inside real workflows.</p>
-  </div>
-  <div class="card cardPanel" style="grid-column: span 4;">
-    <div style="font-weight:950;font-size:18px;">▤</div>
-    <h3 style="margin:6px 0 8px;">Interpretability is a feature</h3>
-    <p class="small">Care and compliance teams need to understand what is driving guidance. We design for explainability, not mystery.</p>
-  </div>
-  <div class="card cardPanel" style="grid-column: span 4;">
-    <div style="font-weight:950;font-size:18px;">◎</div>
-    <h3 style="margin:6px 0 8px;">Measurement first</h3>
-    <p class="small">We treat every recommendation as a hypothesis and every outcome as calibration data. Accuracy improves with use.</p>
-  </div>
-</div>
-
-<p class="small" style="margin-top:18px;max-width:900px;">
-Mnomis is not an engagement automation system. It is an interpretive intelligence layer designed to improve how human care teams communicate.
-</p>
-  </div>
-</div>
-
-<div class="section" id="security">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>Security</div>
-    <h2>Built for healthcare data environments</h2>
-    <div class="grid" style="margin-top:18px;">
-      <div class="card cardPanel" style="grid-column: span 6;">
-        <h3>Data minimization by default</h3>
-        <p class="small">No PII or PHI required. Pseudonymized IDs and engagement events only.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Wasted effort</h3>
+        <p>High volume outreach can create noise, burn staff time, and still miss the moment that matters.</p>
       </div>
-      <div class="card cardPanel" style="grid-column: span 6;">
-        <h3>Designed for review</h3>
-        <p class="small">Interpretability is core. Drivers, confidence, and escalation notes are visible to clinical and compliance teams.</p>
+      <div class="card">
+        <h3>Low follow-through</h3>
+        <p>Even when the care action is clear, members may not respond if the approach conflicts with their engagement stance.</p>
       </div>
-      <div class="card cardPanel" style="grid-column: span 6;">
-        <h3>Secure handling</h3>
-        <p class="small">Secure transfer options and limited retention. Pilot can run without integration.</p>
-      </div>
-      <div class="card cardPanel" style="grid-column: span 6;">
-        <h3>Clear boundaries</h3>
-        <p class="small">Decision support only. Mnomis does not automate care decisions or provide clinical guidance.</p>
+      <div class="card">
+        <h3>Limited explainability</h3>
+        <p>Many tools predict outcomes but do not explain how to adjust communication in a way teams can trust.</p>
       </div>
     </div>
-    <div style="margin-top:18px;">
-      <a class="btn btnGhost" href="security.html">Security and data handling</a>
-    </div>
   </div>
-</div>
+</section>
 
-<div class="section" id="close">
-  <div class="wrap">
-    <div class="kicker"><span class="kdot"></span>Next step</div>
-    <h2>See what this looks like with your data</h2>
-    <p class="sub" style="margin-top:8px;max-width:860px;">
-      We start with a small pilot to demonstrate operational impact and measurement clarity. If it wins, we scope a path to scale inside your workflows.
+<section class="section alt">
+  <div class="container">
+    <h2>Outreach Intelligence Brief</h2>
+    <p>
+      Each member receives a short, interpretable brief. It highlights the engagement posture inferred from behavior, the drivers behind that
+      interpretation, and practical guidance for channel, tone, timing, and escalation.
     </p>
-    <div style="margin-top:18px;">
-      <a class="btn btnAccent" href="pilot.html">Pilot overview</a>
-      <a class="btn btnGhost" href="brief.pdf" target="_blank" style="margin-left:10px;">View sample brief</a>
+    <p class="note">
+      Outputs are designed for human interpretation, not automated clinical decision-making.
+    </p>
+    <div class="hero-actions" style="margin-top:18px;">
+      <a class="secondary-link" href="/output/">See what the Brief contains</a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="footer">
-  <div class="wrap">
-    <div class="footerInner">
-      <div style="display:flex;align-items:center;gap:10px;">
-        <img src="./assets/logo.png" alt="Mnomis logo" style="height:20px;width:auto;display:block;">
-      </div>
-      <div>
-        <a href="pilot.html">Pilot overview</a>
-        <span style="margin:0 10px;">|</span>
-        <a href="security.html">Security</a>
-      </div>
+<section class="section">
+  <div class="container">
+    <h2>Motivational Intelligence Framework</h2>
+    <p>
+      Mnomis is not an engagement automation system. It is an interpretive intelligence layer designed to improve how human care teams communicate.
+      The framework separates stable motivational tendencies from context-driven activation and uses observable behavior to infer what is most active now.
+    </p>
+    <div class="hero-actions" style="margin-top:18px;">
+      <a class="secondary-link" href="/methodology/">Read the Framework</a>
     </div>
   </div>
-</div>
-<script>
-(function swapLogo(){
-  try{
-    document.querySelectorAll('img[data-src]').forEach(function(im){
-      var src = im.getAttribute('data-src');
-      var test = new Image();
-      test.onload = function(){ im.src = src; };
-      test.src = src;
-    });
-  }catch(e){}
-})();
-</script>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2>Workflow integration</h2>
+    <p>
+      Guidance can be surfaced where teams already work, including CRM task views and care management workflows.
+      The brief format is built to support review by clinical leaders and compliance stakeholders.
+    </p>
+    <ul class="list">
+      <li>Clear drivers and confidence</li>
+      <li>Escalation notes when uncertainty is high</li>
+      <li>Simple handoff language for human action</li>
+    </ul>
+  </div>
+</section>
+
+<section class="pilot-transition">
+  <div class="container narrow center">
+    <h2>Start with a no-integration pilot</h2>
+    <p>
+      Share a small export of engagement history. We return a pilot-ready view of outreach guidance and a measurement plan.
+      No PHI is required.
+    </p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a class="cta-button large" href="/pilot/">Request Pilot</a>
+      <a class="secondary-link" href="/about/">About Mnomis</a>
+    </div>
+  </div>
+</section>
+
+  <div data-include="/components/Footer.html"></div>
 </body>
 </html>
