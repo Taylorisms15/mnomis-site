@@ -5,9 +5,8 @@
     var m = p.match(/^\/(mnomis\.com)(\/|$)/);
     if(m){ base = "/" + m[1] + "/"; }
     var existing = document.querySelector("base");
-    if(existing){
-      existing.setAttribute("href", base);
-    } else {
+    if(existing){ existing.setAttribute("href", base); }
+    else{
       var b = document.createElement("base");
       b.setAttribute("href", base);
       document.head.insertBefore(b, document.head.firstChild);

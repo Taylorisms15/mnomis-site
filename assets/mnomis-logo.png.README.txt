@@ -1,0 +1,1 @@
+Place your real logo file here as assets/mnomis-logo.png (lowercase, no spaces). Delete root logo files.
