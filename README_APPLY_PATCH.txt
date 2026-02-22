@@ -1,29 +1,42 @@
-v5 Patch contents
+v6 Patch
 
-Goal
-- Keep the illustrative brief (your preference)
-- Restore your real logo immediately (your repo has /mnomis-logo.png at root)
-- Bring back discrete green highlights
-- Improve executive feel by tightening spacing and visual rhythm, without changing your information architecture
+What this fixes
+1) Logo not working
+   Your site is served under /mnomis.com/ (example: https://www.mnomis.com/mnomis.com/...)
+   Any paths that start with /... point to the domain root and will break.
+   This patch makes paths base-aware so the logo loads correctly.
+
+2) Green buttons
+   The primary CTA button becomes green (executive, not neon).
 
 Files
-1) components/Header.html
-   - Loads /mnomis-logo.png (repo root) first, then /assets/mnomis-logo.png.
+- js/basepath.js
+  Injects a <base> tag automatically when the URL starts with /mnomis.com/.
+- js/include.js
+  Fetches components using the computed base path.
+- components/Header.html
+  Uses relative paths for logo and nav so it works under /mnomis.com/.
+- css/styles.v6.patch.css
+  Append to your existing css/styles.css to make CTAs green and strengthen design presence.
 
-2) assets/brief-visual.svg
-   - Premium illustrative Brief with subtle green accents.
+How to apply
+A) JS
+- Replace your existing js/include.js with the one in this patch.
+- Add js/basepath.js to your repo.
+- In every page <head>, load basepath.js BEFORE include.js, for example:
+  <script src="js/basepath.js"></script>
+  <script src="js/include.js" defer></script>
 
-3) css/styles.v5.patch.css
-   - Append to your existing css/styles.css.
+B) Header
+- Replace components/Header.html with the one in this patch.
+- Update your include placeholders to use relative include paths (no leading slash):
+  data-include="components/Header.html"
+  data-include="components/Footer.html"
 
-4) HOME_HERO_VISUAL_REPLACEMENT.html
-   - Replace the hero visual block in index.html with this.
+C) CSS
+- Append css/styles.v6.patch.css to the end of css/styles.css.
 
-Apply in GitHub
-- Replace components/Header.html with the one in this zip.
-- Add assets/brief-visual.svg to your repo at assets/brief-visual.svg.
-- Append css/styles.v5.patch.css to css/styles.css.
-- In index.html, replace the hero visual container with the snippet.
-
-Optional
-- Apply the same hero snippet on /overview/index.html and /output/index.html.
+Result
+- Logo renders under https://www.mnomis.com/mnomis.com/
+- Nav links work from any page
+- Primary buttons are green and feel more intentional

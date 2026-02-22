@@ -1,0 +1,45 @@
+/* v6 patch: make logo paths work under /mnomis.com/ AND restore stronger design feel with green primary CTAs */
+
+:root{
+  --green:#21C55D;
+  --greenDark:#16A34A;
+  --greenSoft:rgba(33,197,93,0.14);
+  --greenStroke:rgba(33,197,93,0.34);
+}
+
+/* Primary CTA becomes green */
+.cta-button{
+  background: var(--green);
+  color: #0b1220;
+  border: 1px solid rgba(11,18,32,0.10);
+  box-shadow: 0 14px 30px rgba(11,18,32,0.18);
+}
+.cta-button:hover{
+  background: var(--greenDark);
+  color: #0b1220;
+  opacity: 1;
+}
+.cta-button:before{
+  background: #0b1220;
+  opacity: 0.65;
+}
+
+/* Secondary stays quiet */
+.secondary-link{
+  border: 1px solid rgba(11,18,32,0.14);
+}
+
+/* Bring back the green micro accent in kicker */
+.kicker:before{
+  background: var(--green);
+  box-shadow: 0 0 0 7px rgba(33,197,93,0.10);
+}
+
+/* Slightly richer card presence */
+.card{
+  box-shadow: 0 14px 36px rgba(11,18,32,0.14);
+}
+.card:before{
+  background: var(--green);
+  opacity: 0.55;
+}
