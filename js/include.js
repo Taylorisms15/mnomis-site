@@ -2,8 +2,7 @@ async function includeHTML() {
   const base = (window.__MNOMIS_BASE__ || "/").replace(/\/$/, "");
   const includeElements = document.querySelectorAll('[data-include]');
   for (const el of includeElements) {
-    const file = el.getAttribute('data-include');
-    // file is stored as a path like "components/Header.html" (no leading slash)
+    const file = el.getAttribute('data-include'); // e.g. components/Header.html
     const url = `${base}/${file}`.replace(/\/\//g,"/");
     try {
       const resp = await fetch(url, { cache: 'no-cache' });
