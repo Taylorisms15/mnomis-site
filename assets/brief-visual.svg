@@ -14,13 +14,10 @@
   </defs>
 
   <rect x="0" y="0" width="980" height="560" rx="26" fill="url(#bg)"/>
-
   <rect x="44" y="44" width="892" height="472" rx="22" fill="url(#panel)" filter="url(#shadow)"/>
   <rect x="44" y="44" width="892" height="472" rx="22" stroke="rgba(255,255,255,0.10)"/>
 
   <rect x="44" y="44" width="892" height="92" rx="22" fill="#F6F8FB"/>
-  <rect x="44" y="122" width="892" height="14" fill="#F6F8FB"/>
-
   <rect x="74" y="72" width="5" height="36" rx="3" fill="#21C55D"/>
   <text x="92" y="92" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="20" font-weight="900" fill="#0B1220">Outreach Intelligence Brief</text>
   <text x="92" y="118" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="700" fill="#3A465A">Member ID 28417  |  Updated: Today  |  Confidence</text>
@@ -40,38 +37,4 @@
   <circle cx="114" cy="367" r="6" fill="rgba(33,197,93,0.18)" stroke="rgba(33,197,93,0.44)"/>
   <path d="M111 367l2 2 4-5" stroke="#21C55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="128" y="372" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">No follow-through after SMS reminders (3x)</text>
-
-  <rect x="96" y="392" width="326" height="34" rx="999" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
-  <circle cx="114" cy="409" r="6" fill="rgba(33,197,93,0.18)" stroke="rgba(33,197,93,0.44)"/>
-  <path d="M111 409l2 2 4-5" stroke="#21C55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="128" y="414" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">High response when caller offers 2 concrete options</text>
-
-  <rect x="96" y="434" width="326" height="34" rx="999" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
-  <circle cx="114" cy="451" r="6" fill="rgba(33,197,93,0.18)" stroke="rgba(33,197,93,0.44)"/>
-  <path d="M111 451l2 2 4-5" stroke="#21C55D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="128" y="456" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">Delayed engagement until urgent event pattern</text>
-
-  <rect x="474" y="156" width="432" height="166" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
-  <text x="496" y="186" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="900" fill="#3A465A">Recommended outreach</text>
-
-  <text x="496" y="218" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#3A465A">Channel</text>
-  <text x="586" y="218" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#0B1220">Phone call</text>
-
-  <text x="496" y="246" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#3A465A">Tone</text>
-  <text x="586" y="246" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#0B1220">Direct, step-by-step</text>
-
-  <text x="496" y="274" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#3A465A">Next step</text>
-  <text x="586" y="274" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#0B1220">Offer two appointment windows</text>
-
-  <text x="496" y="302" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#3A465A">Escalation</text>
-  <text x="586" y="302" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="900" fill="#0B1220">If no answer, follow with mailed card</text>
-
-  <rect x="474" y="338" width="432" height="158" rx="16" fill="#FFFFFF" stroke="rgba(11,18,32,0.14)"/>
-  <text x="496" y="368" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="13" font-weight="900" fill="#3A465A">Script cue</text>
-  <text x="496" y="394" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="650" fill="#3A465A">Keep it short. Reduce choice overload. Make the action concrete.</text>
-
-  <rect x="496" y="414" width="388" height="62" rx="14" fill="#F6F8FB" stroke="rgba(11,18,32,0.10)"/>
-  <rect x="496" y="414" width="6" height="62" rx="3" fill="#21C55D" opacity="0.55"/>
-  <text x="512" y="440" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">We can take care of this in two quick options. Which works better,</text>
-  <text x="512" y="458" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="12" font-weight="800" fill="#0B1220">Tuesday morning or Thursday afternoon?</text>
 </svg>
