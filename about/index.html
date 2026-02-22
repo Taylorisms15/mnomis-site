@@ -2,67 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About | Mnomis</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/basepath.js"></script>
-  <script src="../js/include.js" defer></script>
 </head>
 <body>
-  <div data-include="components/Header.html"></div>
-  
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="../assets/mnomis-logo.png" alt="Mnomis">
+    </div>
+    <nav>
+      <a href="../framework/">Framework</a>
+      <a href="../brief/">Brief</a>
+      <a href="../pilot/">Pilot</a>
+      <a href="../about/">About</a>
+      <a href="../pilot/" class="cta">Request Pilot →</a>
+    </nav>
+  </div>
+</header>
+
 <section class="hero">
   <div class="container">
-    <span class="kicker">About</span>
-    <h1>About Mnomis</h1>
-    <p class="hero-subhead">
-      Mnomis was created to solve a persistent failure in healthcare outreach: care teams know what needs to happen, but often lack insight into how each member is most likely to receive outreach at the moment action is required.
+    <div class="kicker">About</div>
+    <h1>Outreach Intelligence for care management</h1>
+    <p>
+      Most care management organizations know which members are high risk.
+      What they often lack is insight into why those members are not engaging, and whether outreach is helping or making things worse.
     </p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container narrow">
+<section>
+  <div class="container">
     <h2>Interpretation, not prediction</h2>
     <p>
-      Mnomis does not simply predict what members will do. It interprets observed behavior to infer how they are most likely to receive outreach now.
-      That interpretation is translated into operational guidance that care teams can act on immediately.
+      Mnomis is an interpretive intelligence layer. It reads engagement behavior over time and translates that interpretation into structured outreach guidance.
+      It is not a risk score and it is not a nudge engine.
     </p>
   </div>
 </section>
 
-<section class="section alt">
-  <div class="container narrow">
-    <h2>Built for real workflows</h2>
+<section>
+  <div class="container">
+    <h2>Operational by design</h2>
     <p>
-      Outputs are designed for human interpretation, not black-box scoring. Every brief includes drivers, confidence, and escalation notes,
-      supporting clinical review and compliance review.
+      Outputs are designed to embed into existing workflows and support clinical review and compliance review.
+      The system improves as additional interaction data accumulates.
     </p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container narrow">
-    <h2>What we aim to improve</h2>
-    <ul class="list">
-      <li>Follow-through on care actions</li>
-      <li>Reduced wasted outreach effort</li>
-      <li>Higher response rates without changing clinical content</li>
-      <li>Clear guidance that care teams can trust</li>
-    </ul>
+<footer>
+  <div class="container">
+    Outreach Intelligence for Care Management<br>
+    Powered by the Motivational Intelligence Framework
   </div>
-</section>
-
-<section class="pilot-transition">
-  <div class="container narrow center">
-    <h2>Start with a structured pilot</h2>
-    <p>
-      Evaluate the output on your population using existing engagement history and a clear measurement plan.
-    </p>
-    <a href="../pilot/" class="cta-button large">Request Pilot</a>
-  </div>
-</section>
-
-  <div data-include="components/Footer.html"></div>
+</footer>
 </body>
 </html>
