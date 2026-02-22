@@ -1,0 +1,54 @@
+/* v5 patch: executive design rhythm + discrete green highlights + illustrative brief */
+
+:root{
+  --green:#21C55D;
+  --greenSoft:rgba(33,197,93,0.14);
+  --greenStroke:rgba(33,197,93,0.34);
+}
+
+.site-header{
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+}
+
+.hero{
+  padding: 120px 0 80px;
+}
+
+.kicker:before{
+  content:"";
+  width:7px;height:7px;border-radius:999px;
+  background:var(--green);
+  box-shadow:0 0 0 7px rgba(33,197,93,0.08);
+}
+
+.cta-button{
+  position:relative;
+}
+.cta-button:before{
+  content:"";
+  position:absolute;
+  left:10px;top:50%;
+  width:6px;height:6px;border-radius:999px;
+  transform:translateY(-50%);
+  background:var(--green);
+  opacity:0.85;
+}
+
+.visual-wrap{
+  position:relative;
+}
+.visual-wrap:after{
+  content:"";
+  position:absolute;
+  right:18px;top:18px;
+  width:10px;height:10px;border-radius:999px;
+  background:var(--green);
+  box-shadow:0 0 0 9px rgba(33,197,93,0.10);
+  opacity:0.9;
+}
+
+.visual{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
