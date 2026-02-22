@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="170" height="32" viewBox="0 0 170 32" fill="none">
-  <g opacity="0.98">
-    <rect x="1" y="1" width="30" height="30" rx="8" stroke="currentColor" stroke-width="2"/>
-    <path d="M9 22V10.6L16 17L23 10.6V22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="40" y="22.5" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="18" font-weight="800" fill="currentColor">Mnomis</text>
-  </g>
-</svg>
